@@ -23,5 +23,11 @@ Practical general sorting algorithms are almost always based on an algorithm wit
 Is an asymptotic notation, which helps to identify the behavior of an algorithm depending on the upper limit, since it represents the worst case in terms of performance, big O simplifies the algorithm in its approximation in real functions based on the execution time.
 
 ![alt text](https://1.bp.blogspot.com/-bjP1Mt98YMU/XWMhHAFNFKI/AAAAAAABGOM/Rvqe3UU5SKMYY8DpBbR0BA2KadrgLQcxwCLcBGAs/s1600/1_5ZLci3SuR0zM_QlZOADv8Q.jpeg)
+
 ### How to select the best sorting algorithm for a given input
+
+To choose a sorting algorithm for a particular problem, consider the running time, space complexity, and the expected format of the input list.
+![Test Image 1](sort.png)
+
+
 ### What is a stable sorting algorithm
