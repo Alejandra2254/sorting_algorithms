@@ -27,7 +27,10 @@ Is an asymptotic notation, which helps to identify the behavior of an algorithm 
 ### How to select the best sorting algorithm for a given input
 
 To choose a sorting algorithm for a particular problem, consider the running time, space complexity, and the expected format of the input list.
-![Test Image 1](sort.png)
+![Test Image 1](shttps://algs4.cs.princeton.edu/25applications/images/sort-characteristics.png)
 
+When choosing a sorting algorithm to use, weigh these factors. For example, quicksort is a very fast algorithm but can be pretty tricky to implement; bubble sort is a slow algorithm but is very easy to implement. To sort small sets of data, bubble sort may be a better option since it can be implemented quickly, but for larger datasets, the speedup from quicksort might be worth the trouble implementing the algorithm
 
 ### What is a stable sorting algorithm
+
+Stable sorting algorithms maintain the relative order of records with equal keys (i.e. values). That is, a sorting algorithm is stable if whenever there are two records R and S with the same key and with R appearing before S in the original list, R will appear before S in the sorted list. See here for a more complete description.
