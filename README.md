@@ -27,7 +27,7 @@ Is an asymptotic notation, which helps to identify the behavior of an algorithm 
 ### How to select the best sorting algorithm for a given input
 
 To choose a sorting algorithm for a particular problem, consider the running time, space complexity, and the expected format of the input list.
-![alt text](shttps://algs4.cs.princeton.edu/25applications/images/sort-characteristics.png)
+![alt text](https://2.bp.blogspot.com/-eW0lPBAT5ig/VABDMToS2RI/AAAAAAAAC00/mwdyxDTrZU4/s1600/comparision_of_sorting_algorithms.png)
 
 When choosing a sorting algorithm to use, weigh these factors. For example, quicksort is a very fast algorithm but can be pretty tricky to implement; bubble sort is a slow algorithm but is very easy to implement. To sort small sets of data, bubble sort may be a better option since it can be implemented quickly, but for larger datasets, the speedup from quicksort might be worth the trouble implementing the algorithm
 
