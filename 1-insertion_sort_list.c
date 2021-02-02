@@ -9,7 +9,6 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *current = NULL;
-	listint_t *temp = NULL;
 
 	current = (*list)->next; /*asignando a el primer nodo*/
 
@@ -20,25 +19,37 @@ void insertion_sort_list(listint_t **list)
 	{
 		while (current->prev  && current->n < current->prev->n)
 		{
-			temp = current;
-
-			if (current->next != NULL)
-				current->next->prev = temp->prev;
-			current->prev->next = temp->next;
-
-			current = current->prev;
-			temp->prev = current->prev;
-			temp->next = current;
-			if (current->prev != NULL)
-				current->prev->next = temp;
-			current->prev = temp;
-
-			if (temp->prev == NULL)
-			*list = temp;
-
+			swap_list(current->prev, current, list);
 			print_list(*list);
-			current = current->prev;
 		}
 			current = current->next;
 	}
+}
+/**
+ * swap_list - function to swap the nodes in a list
+ * @Node1: first node to swap
+ * @Node2: Second node to swap
+ * @list: pointer to head
+ */ 
+void swap_list(listint_t *Node1, listint_t *Node2, listint_t **list)
+{
+	listint_t *A, *B, *C, *D;
+
+	A = Node1->prev;
+	B = Node1;
+	C = Node2;
+	D = Node2->next;
+
+	/* Initial A->B->C->D; Final A->C->B->D*/
+	if (A)
+		A->next = C;
+	C->prev = A;
+	C->next = B;
+	B->prev = C;
+	B->next = D;
+	if (D)
+		D->prev = B;
+
+	if (*list == B)
+		*list = C;
 }
