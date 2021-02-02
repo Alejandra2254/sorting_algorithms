@@ -8,8 +8,8 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *current;
-	listint_t *temp;
+	listint_t *current = NULL;
+	listint_t *temp = NULL;
 
 	current = (*list)->next; /*asignando a el primer nodo*/
 
@@ -18,7 +18,7 @@ void insertion_sort_list(listint_t **list)
 
 	while (current)
 	{
-		while (current->prev != NULL && current->n < current->prev->n)
+		while (current->prev  && current->n < current->prev->n)
 		{
 			temp = current;
 
