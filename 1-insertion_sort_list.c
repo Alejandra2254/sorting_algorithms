@@ -8,7 +8,7 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *current = NULL;
+	listint_t *current = NULL, *prev = NULL;
 
 	current = (*list)->next; /*asignando a el primer nodo*/
 
@@ -30,7 +30,7 @@ void insertion_sort_list(listint_t **list)
  * @Node1: first node to swap
  * @Node2: Second node to swap
  * @list: pointer to head
- */ 
+ */
 void swap_list(listint_t *Node1, listint_t *Node2, listint_t **list)
 {
 	listint_t *A, *B, *C, *D;
