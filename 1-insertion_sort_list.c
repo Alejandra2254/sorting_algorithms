@@ -8,7 +8,7 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *current = NULL, *prev = NULL;
+	listint_t *current = NULL;
 
 	current = (*list)->next; /*asignando a el primer nodo*/
 
